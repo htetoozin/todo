@@ -1,0 +1,21 @@
+todoapp
+id primary ai
+title text
+description text
+created_at  timestamp current_time
+
+
+$sql = "INSERT INTO todapp (title,description) VALUES (:title,:description)";
+$pdostatement = $pdo -> prepare($sql);
+$result = $pdostatement -> execute(
+array(
+    ':title' => $title,
+    ':description => $desc
+)
+); 
+
+<script> alert('New ToDo is add');window.location.href='index.php';
+</script>
+
+mysql = "SELECT * FROM todo ORDER BY id ASC";
+SELECT * FROM todo ORDER BY id DESC
